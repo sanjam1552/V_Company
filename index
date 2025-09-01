@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph Meta Tags for Large WhatsApp Preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sanjam1552.github.io/portfolio/" />
+    <meta property="og:title" content="Master Digital Skills!" />
+    <meta property="og:description" content="Check out my work in design, motion graphics, and more!" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/sanjam1552/portfolio/main/preview%201080.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
+    <!-- Twitter Card (For compatibility) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Master Digital Skills!">
+    <meta name="twitter:description" content="Check out my work in design, motion graphics, and more!">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/sanjam1552/portfolio/main/preview%201080.png">
+
+    <title>Master Digital Skills!</title>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0a0a0a, #91013d);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow-y: auto; /* Change from hidden to auto */
+    -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+        }
+        .background-orbs {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .orb {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255, 0, 150, 0.6), transparent);
+            box-shadow: 0 0 20px rgba(255, 0, 150, 0.8);
+            animation: float 8s infinite alternate ease-in-out;
+            filter: blur(15px);
+        }
+        .orb1 { top: 10%; left: 20%; animation-delay: 0s; }
+        .orb2 { bottom: 20%; right: 15%; animation-delay: 2s; }
+        .orb3 {top: 45%;left: 50%;
+                margin-left: -75px;  /* Half of the orb's width */
+                margin-top: -75px;   /* Half of the orb's height */
+                animation-delay: 4s;
+        }
+
+        
+        @keyframes float {
+            0% { transform: translateY(0px) translateX(0px); }
+            50% { transform: translateY(-40px) translateX(30px); }
+            100% { transform: translateY(40px) translateX(-30px); }
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            position: relative; /* Add this */
+            top: -5vh; /* Moves everything up */
+        }
+        .logo {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: white;
+            margin-bottom: 15px;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid white;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+        <div class="orb orb3"></div>
+    </div>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <h2>Connect with Me</h2>
+       <a href="https://wa.me/9874749666?text=Hi%20there!%20I'm%20interested%20in%20your%20courses." class="button" target="_blank">Chat on WhatsApp</a>
+        <a href="https://drive.google.com/file/d/1--9xgKrNGo14ZvLkibCjDPSyqxhzyAbW/view?usp=sharing">View Portfolio</a>
+    </div>
+</body>
+</html>
